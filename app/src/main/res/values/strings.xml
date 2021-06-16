@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bake&amp;Deliver</string>
+    <string name="menu_button">MENU</string>
+    <string name="cart">cart</string>
+    <string name="birthday_specials">Birthday specials</string>
+    <string name="biscuits">Biscuits</string>
+    <string name="bread_and_bun">Bread and Bun</string>
+    <string name="cakes">Cakes</string>
+    <string name="crunchy_snacks">Crunchy Snacks</string>
+    <string name="kids_snacks">Kids Snacks</string>
+    <string name="rusks">Rusks</string>
+</resources>

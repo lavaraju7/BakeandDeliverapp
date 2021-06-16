@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductView">
+
+    <ImageView
+        android:id="@+id/productimage"
+        android:layout_width="370dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toTopOf="@id/nameview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/costview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik"
+        android:text="TextView"
+        android:textSize="14pt"
+        app:layout_constraintBottom_toTopOf="@id/quantview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameview" />
+
+    <TextView
+        android:id="@+id/nameview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik"
+        android:text="TextView"
+        android:textSize="14pt"
+        app:layout_constraintBottom_toTopOf="@id/costview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productimage" />
+
+    <TextView
+        android:id="@+id/quantview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/costview" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="100dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#ffb300"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cartbutton"
+        app:layout_constraintRight_toLeftOf="@id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@id/quantview"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="100dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#ffb300"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cartbutton"
+        app:layout_constraintLeft_toRightOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@id/quantview"
+        app:srcCompat="@drawable/ic_baseline_minimize_24" />
+
+    <Button
+        android:id="@+id/cartbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/button"
+        android:elevation="10dp"
+        android:fontFamily="@font/rubik"
+        android:text="Add To Cart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
